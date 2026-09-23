@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vibe Fest — Logística de conciertos en Bogotá</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__row">
+    <a href="#top" class="nav__brand">VIBE FEST</a>
+    <ul class="nav__links">
+      <li><a href="#journey">Cómo funciona</a></li>
+      <li><a href="#incluye">Qué incluye</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#faq">Preguntas</a></li>
+    </ul>
+    <a href="#acceso" class="nav__cta">Reserva tu lugar</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMobile">☰</button>
+  </div>
+  <div class="nav__menu-mobile" id="navMobile">
+    <a href="#journey">Cómo funciona</a>
+    <a href="#incluye">Qué incluye</a>
+    <a href="#planes">Planes</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#acceso" class="is-cta">Reserva tu lugar</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">Aterrizas. Vas directo al concierto. Nosotros hacemos lo demás.</h1>
+        <p class="hero__sub">Vibe Fest organiza tu llegada a Bogotá alrededor de una sola cosa: el show. Transporte desde El Dorado, comida en el camino, equipaje resuelto y hotel ya reservado, para que tu única decisión del día sea qué camiseta te vas a poner.</p>
+        <div class="hero__actions">
+          <a href="#acceso" class="btn btn--primary">Reserva tu lugar</a>
+          <a href="#journey" class="btn btn--ghost">Ver cómo funciona</a>
+        </div>
+      </div>
+      <div class="stub" aria-hidden="true">
+        <div class="stub__top">
+          <span class="stub__title">Vibe Fest</span>
+          <span class="stub__code">BOG → SHOW</span>
+        </div>
+        <div class="stub__field"><span>Pasajero</span><span>Tú</span></div>
+        <div class="stub__field"><span>Ruta</span><span>El Dorado → Show → Hotel</span></div>
+        <div class="stub__field"><span>Puerta</span><span>Sin filas</span></div>
+        <div class="stub__field"><span>Estado</span><span>Confirmado</span></div>
+        <div class="stub__perf"></div>
+        <div class="stub__barcode"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="wrap problem__grid">
+      <div class="section__head section__head--tight">
+        <h2 class="section__title">La logística no debería competir con la música</h2>
+      </div>
+      <div class="problem__lines">
+        <p>Llegas de un vuelo largo y todavía te toca buscar transporte con las maletas a cuestas.</p>
+        <p>No hay tiempo de comer bien entre el aeropuerto y la puerta del concierto.</p>
+        <p>Cargar la maleta durante el show, o dejarla en un lugar del que no estás seguro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Tu itinerario, de principio a fin</h2>
+        <p class="section__sub">Cinco tramos, un solo boleto.</p>
+      </div>
+      <div class="journey__strip">
+        <div class="stop">
+          <span class="stop__num">01</span>
+          <h3 class="stop__title">Aeropuerto El Dorado</h3>
+          <p class="stop__desc">Te recogemos apenas aterrizas, sin que tengas que resolver transporte por tu cuenta.</p>
+        </div>
+        <div class="stop">
+          <span class="stop__num">02</span>
+          <h3 class="stop__title">En ruta</h3>
+          <p class="stop__desc">Una comida te espera en el vehículo, directo hacia el lugar del concierto.</p>
+        </div>
+        <div class="stop">
+          <span class="stop__num">03</span>
+          <h3 class="stop__title">Durante el show</h3>
+          <p class="stop__desc">Mientras disfrutas cada canción, llevamos tus maletas a tu hotel, ya reservado por nosotros.</p>
+        </div>
+        <div class="stop">
+          <span class="stop__num">04</span>
+          <h3 class="stop__title">Fin del concierto</h3>
+          <p class="stop__desc">Te recogemos a la salida y te llevamos derecho al hotel.</p>
+        </div>
+        <div class="stop">
+          <span class="stop__num">05</span>
+          <h3 class="stop__title">Esa noche</h3>
+          <p class="stop__desc">Llegas a una comida servida y a descansar, sin nada pendiente por resolver.</p>
+        </div>
+      </div>
+      <p class="journey__note">Desliza para ver el recorrido completo en pantallas pequeñas.</p>
+    </div>
+  </section>
+
+  <!-- INCLUDES -->
+  <section id="incluye" class="includes-section">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Qué incluye Vibe Fest</h2>
+        <p class="section__sub">Seis piezas que se coordinan solas para que tú no tengas que hacerlo.</p>
+      </div>
+      <div class="includes__grid">
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 21 5.5l-6.5 15-2-7-7-2Z"/></svg>
+          <div class="incl__title">Transporte aeropuerto–concierto</div>
+          <p class="incl__desc">Recogida directa en El Dorado, sin pasar antes por el hotel.</p>
+        </div>
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v8a2 2 0 0 0 4 0V2M8 10v12M18 2c-1.4 0-2.5 1.7-2.5 4.5S16.6 11 18 11v11"/></svg>
+          <div class="incl__title">Comida en el trayecto</div>
+          <p class="incl__desc">Algo de comer camino al concierto, para que no llegues con hambre.</p>
+        </div>
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg>
+          <div class="incl__title">Gestión de equipaje</div>
+          <p class="incl__desc">Tus maletas viajan directo al hotel mientras tú estás en el show.</p>
+        </div>
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6"/><path d="M3 18v2M21 18v2"/><path d="M3 13v-3a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3"/></svg>
+          <div class="incl__title">Reserva de hospedaje</div>
+          <p class="incl__desc">Elegimos tu hotel según presupuesto, o coordinamos con el que ya tengas.</p>
+        </div>
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16V11l2-5h12l2 5v5"/><path d="M4 16h16"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></svg>
+          <div class="incl__title">Transporte de regreso</div>
+          <p class="incl__desc">Te recogemos a la salida del concierto y te llevamos directo al hotel.</p>
+        </div>
+        <div class="incl">
+          <svg class="incl__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.6A9 9 0 1 1 11.4 3a7 7 0 0 0 9.6 9.6Z"/></svg>
+          <div class="incl__title">Cena y descanso</div>
+          <p class="incl__desc">Una comida te espera en el hotel al final de la noche.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Para quién es Vibe Fest</h2>
+      </div>
+      <div class="audience__grid">
+        <div class="aud">
+          <div class="aud__title">Turista internacional</div>
+          <p class="aud__desc">Aterrizas en Bogotá el mismo día del show y no quieres perder horas resolviendo logística en una ciudad que no conoces.</p>
+        </div>
+        <div class="aud">
+          <div class="aud__title">Viajero nacional</div>
+          <p class="aud__desc">Vienes de otra ciudad de Colombia solo por el concierto y quieres que el viaje se sienta tan bien planeado como el show.</p>
+        </div>
+        <div class="aud">
+          <div class="aud__title">Grupos y planes especiales</div>
+          <p class="aud__desc">Van varios amigos o familiares y prefieren que alguien más se encargue de los detalles del día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="planes">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Planes piloto</h2>
+        <p class="section__sub">Estamos en fase de acceso anticipado; estos son los paquetes con los que arrancamos en Bogotá.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="plan">
+          <div class="plan__name">Esencial</div>
+          <div class="plan__price">$150.000 COP</div>
+          <div class="plan__unit">por persona</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Transporte aeropuerto → concierto → hotel, ida y vuelta</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Una comida en el trayecto de ida</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Acompañamiento durante todo el recorrido</li>
+          </ul>
+          <a href="#acceso" class="btn btn--ghost plan__cta" onclick="setPlan('Esencial')">Elegir este plan</a>
+        </div>
+        <div class="plan plan--highlight">
+          <div class="plan__name">Completo</div>
+          <div class="plan__price">$320.000 COP</div>
+          <div class="plan__unit">por persona</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Todo lo de Esencial</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Gestión y entrega de equipaje en el hotel</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Reserva de hospedaje coordinada por nosotros</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Comida de bienvenida en el hotel</li>
+          </ul>
+          <a href="#acceso" class="btn btn--primary plan__cta" onclick="setPlan('Completo')">Elegir este plan</a>
+        </div>
+        <div class="plan">
+          <div class="plan__name">Grupos y VIP</div>
+          <div class="plan__price">A la medida</div>
+          <div class="plan__unit">cotización personalizada</div>
+          <ul class="plan__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Vehículo privado para tu grupo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Itinerario para varios conciertos o días</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg>Coordinación completa con el hotel de tu elección</li>
+          </ul>
+          <a href="#acceso" class="btn btn--ghost plan__cta" onclick="setPlan('Grupos y VIP')">Cotizar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARLY ACCESS NOTE -->
+  <section class="note">
+    <div class="wrap note__grid">
+      <div class="note__label">Fase piloto</div>
+      <p class="note__text">Vibe Fest está arrancando en Bogotá. Estamos afinando rutas, tiempos y alianzas con hoteles junto con las primeras personas que reservan. Si entras ahora, tu experiencia nos ayuda a mejorar el servicio, y tú te ahorras la logística desde tu primer viaje.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="section__title">Preguntas frecuentes</h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>¿Qué pasa si mi vuelo se retrasa o se adelanta?</summary>
+          <p>Ajustamos el punto de recogida a tu hora real de llegada, dentro de la ventana acordada, sin costo adicional.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿El hospedaje ya viene incluido o yo lo escojo?</summary>
+          <p>Nosotros reservamos el hotel según tu presupuesto y preferencias. Si ya tienes uno, coordinamos toda la logística con ese hotel.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Qué tan seguras van mis maletas?</summary>
+          <p>Viajan con nuestro equipo, en un vehículo dedicado, directo a tu hotel mientras tú estás en el concierto.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Funciona si voy a varios conciertos el mismo fin de semana?</summary>
+          <p>Sí. Armamos un itinerario completo cuando vienes por más de un show.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿En qué ciudad operan?</summary>
+          <p>Por ahora, exclusivamente en Bogotá.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Con cuánta anticipación debo reservar?</summary>
+          <p>Mientras más pronto mejor: así aseguramos transporte y disponibilidad de hotel para la fecha del concierto.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / FORM -->
+  <section class="cta" id="acceso">
+    <div class="wrap cta__grid">
+      <div class="cta__text">
+        <h2 class="section__title">Reserva tu lugar en el itinerario</h2>
+        <p>Cuéntanos qué concierto vas a ver y armamos tu logística. Es una solicitud de acceso anticipado, sin ningún compromiso.</p>
+      </div>
+      <div class="form">
+        <form id="waitlistForm">
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required>
+          </div>
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" required>
+          </div>
+          <div class="field">
+            <label for="concierto">Concierto o artista</label>
+            <input id="concierto" name="concierto" type="text" placeholder="Ej: Coldplay, 14 de marzo">
+          </div>
+          <div class="field">
+            <label for="ciudad">Ciudad de origen</label>
+            <input id="ciudad" name="ciudad" type="text" placeholder="Ej: Ciudad de México, Medellín...">
+          </div>
+          <div class="field">
+            <label for="plan">Plan de interés</label>
+            <select id="plan" name="plan">
+              <option>Aún no decido</option>
+              <option>Esencial</option>
+              <option>Completo</option>
+              <option>Grupos y VIP</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary form__submit">Enviar solicitud</button>
+        </form>
+        <div class="confirm" id="confirmPanel">
+          <p class="confirm__title">Solicitud recibida</p>
+          <div class="confirm__code" id="confirmCode">VF-0000</div>
+          <p id="confirmMsg">Te escribiremos pronto para coordinar los detalles de tu llegada a Bogotá.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot__grid">
+    <div class="foot__col">
+      <div class="foot__brand">VIBE FEST</div>
+      <div class="foot__tag">Logística de conciertos en Bogotá.</div>
+    </div>
+    <div class="foot__meta">
+      hola@vibefest.co<br>
+      Bogotá, Colombia — proyecto en fase piloto.
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const nav = document.getElementById('nav');
+  const navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav__menu-mobile a').forEach(a => {
+    a.addEventListener('click', () => { nav.classList.remove('is-open'); navToggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // Pricing CTA -> preselect plan in form
+  function setPlan(name){
+    const select = document.getElementById('plan');
+    if(select){ select.value = name; }
+  }
+
+  // Waitlist form (front-end only demo: no data leaves this page)
+  const form = document.getElementById('waitlistForm');
+  const confirmPanel = document.getElementById('confirmPanel');
+  const confirmCode = document.getElementById('confirmCode');
+  const confirmMsg = document.getElementById('confirmMsg');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const correo = document.getElementById('correo').value.trim();
+    const code = 'VF-' + Math.floor(1000 + Math.random() * 9000);
+    confirmCode.textContent = code;
+    confirmMsg.textContent = correo
+      ? 'Te escribiremos a ' + correo + ' en las próximas horas para coordinar los detalles de tu llegada a Bogotá.'
+      : 'Te contactaremos pronto para coordinar los detalles de tu llegada a Bogotá.';
+    form.style.display = 'none';
+    confirmPanel.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
